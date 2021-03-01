@@ -34,8 +34,8 @@ public abstract class Shape2D {
 	@Override
 	public boolean equals( Object o ) {
 		Shape2D other;
-		if( o instanceof Shape2D ) {
-			other = (Shape2D) o;
+		if ( o instanceof Shape2D ) {
+			other = ( Shape2D ) o;
 			return other.centerX == centerX && other.centerY == centerY;
 		}
 		return false;

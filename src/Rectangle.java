@@ -1,9 +1,27 @@
-
+/**
+ * 
+ * @author Tolga Ozgun
+ * @version 1.0
+ * @date 01/03/2021
+ * 
+ * A subclass of Shape2D, rectangle class has height and width properties.
+ * Overrides following methods: calculateArea, calculatePerimeter, toString
+ * and equals.
+ *
+ */
 public class Rectangle extends Shape2D {
 
 	final int height;
 	final int width;
 
+	/**
+	 * Default constructor
+	 * 
+	 * @param centerX Integer x value for the center of this rectangle.
+	 * @param centerY Integer y value for the center of this rectangle.
+	 * @param height  Integer height value of this rectangle.
+	 * @param width   Integer width value of this rectangle.
+	 */
 	public Rectangle( int centerX, int centerY, int height, int width ) {
 		super( centerX, centerY );
 		this.height = height;

@@ -1,5 +1,14 @@
 import java.util.Arrays;
 
+/**
+ * 
+ * @author Tolga Ozgun
+ * @version 1.1
+ * @date 01/03/2021
+ * 
+ *       Test class for abstract class Shape2D and its subclasses
+ *
+ */
 public class ShapeTest {
 
 	public static void main( String[] args ) {
@@ -22,23 +31,33 @@ public class ShapeTest {
 		shapeArray[ 1 ] = circle;
 		shapeArray[ 2 ] = sq;
 
+		// Print out the current shapes
 		System.out.println( rect );
 		System.out.println( circle );
 		System.out.println( "sq: " + sq );
 		System.out.println( "sq2: " + sq2 );
 		System.out.println( "sq3: " + sq3 );
 		System.out.println( "sq4: " + sq4 );
+
+		// Prints out tests for equals method
 		System.out.println( "sq.equals( sq2 ) is " + sq.equals( sq2 ) );
 		System.out.println( "sq.equals( sq3 ) is " + sq.equals( sq3 ) );
 		System.out.println( "sq.equals( sq4 ) is " + sq.equals( sq4 ) );
 		System.out.println( "sq.equals( circle ) is " + sq.equals( circle ) );
+
+		// Prints out shape array
 		System.out
 				.println( "The shape array: " + Arrays.toString( shapeArray ) );
+
+		// Prints out shapes with largest area and
+		// longest perimeter in shapes array.
 		System.out.println( findLargestArea( shapeArray ).getClass().getName()
 				+ " has the largest area" );
 		System.out.println(
 				findLongestPerimeter( shapeArray ).getClass().getName()
 						+ " has longest perimeter " );
+
+		// Distances between shapes in shape array.
 		System.out.print( "Distance between shape 1 shape 2 is "
 				+ shapeArray[ 0 ].calculateDistance( shapeArray[ 1 ] ) );
 		System.out.println( "Distance between shape 1 shape 3 is "
@@ -47,6 +66,13 @@ public class ShapeTest {
 				+ shapeArray[ 1 ].calculateDistance( shapeArray[ 2 ] ) );
 	}
 
+	/**
+	 * Returns the Shape2D object with the largest area from the given parameter
+	 * of Shape2D array
+	 * 
+	 * @param shapes Shape2D array
+	 * @return The Shape2D object with largest area.
+	 */
 	public static Shape2D findLargestArea( Shape2D[] shapes ) {
 		double maxArea;
 		Shape2D selectedShape;
@@ -64,6 +90,13 @@ public class ShapeTest {
 		return selectedShape;
 	}
 
+	/**
+	 * Returns the Shape2D object with longest perimeter from the given
+	 * parameter of Shape2D array
+	 * 
+	 * @param shapes Shape2D array
+	 * @return Shape2D object with longest perimeter
+	 */
 	public static Shape2D findLongestPerimeter( Shape2D[] shapes ) {
 		double maxPerim;
 		Shape2D selectedShape;
