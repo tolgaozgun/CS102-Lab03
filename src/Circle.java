@@ -1,12 +1,11 @@
 /**
  * 
- * @author Tolga Ozgun
- * @version 1.0
- * @date 01/03/2021
- * 
  * A subclass of Shape2D, circle class has radius property.
  * Overrides following methods: calculateArea, calculatePerimeter, toString
  * and equals.
+ * 
+ * @author Tolga Ozgun
+ * @version 1.2, 03/03/2021
  *
  */
 public class Circle extends Shape2D {
@@ -27,24 +26,33 @@ public class Circle extends Shape2D {
 	
 	/**
 	 * {@inheritDoc}
-	 * @return 
 	 */
-
 	@Override
 	public double calculatePerimeter() {
 		return 2 * Math.PI * radius;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public double calculateArea() {
 		return Math.PI * radius * radius;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 * Also prints its radius.
+	 * @return String value of this Circle object.
+	 */
 	@Override
 	public String toString() {
 		return super.toString() + " and radius = " + radius;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public boolean equals( Object o ) {
 		Circle other;

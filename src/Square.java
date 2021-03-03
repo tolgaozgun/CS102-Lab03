@@ -1,12 +1,11 @@
 /**
  * 
- * @author Tolga Ozgun
- * @version 1.0
- * @date 01/03/2021
- * 
  * A subclass of Shape2D, square class has side length property.
  * Overrides following methods: calculateArea, calculatePerimeter, toString
  * and equals.
+ * 
+ * @author Tolga Ozgun
+ * @version 1.2, 03/03/2021
  *
  *
  */
@@ -26,21 +25,35 @@ public class Square extends Shape2D {
 		this.sideLength = sideLength;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public double calculatePerimeter() {
 		return 4 * sideLength;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public double calculateArea() {
 		return sideLength * sideLength;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 * Also prints the side.
+	 * @return String value of this Square object.
+	 */
 	@Override
 	public String toString() {
 		return super.toString() + " and side = " + sideLength;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public boolean equals( Object o ) {
 		Square other;

@@ -2,11 +2,10 @@ import java.util.Arrays;
 
 /**
  * 
- * @author Tolga Ozgun
- * @version 1.1
- * @date 01/03/2021
+ * Test class for abstract class Shape2D and its subclasses
  * 
- *       Test class for abstract class Shape2D and its subclasses
+ * @author Tolga Ozgun
+ * @version 1.2, 03/03/2021
  *
  */
 public class ShapeTest {
