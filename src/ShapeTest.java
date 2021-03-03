@@ -5,7 +5,7 @@ import java.util.Arrays;
  * Test class for abstract class Shape2D and its subclasses
  * 
  * @author Tolga Ozgun
- * @version 1.2, 03/03/2021
+ * @version 1.3, 03/03/2021
  *
  */
 public class ShapeTest {
@@ -45,8 +45,8 @@ public class ShapeTest {
 		System.out.println( "sq.equals( circle ) is " + sq.equals( circle ) );
 
 		// Prints out shape array
-		System.out
-				.println( "The shape array: " + Arrays.toString( shapeArray ) );
+		System.out.println( "The shape array: " 
+				+ Arrays.toString( shapeArray ) );
 
 		// Prints out shapes with largest area and
 		// longest perimeter in shapes array.
